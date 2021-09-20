@@ -113,7 +113,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                      jQuery( "#send_pause" ).hide();
                                      jQuery( "#send_cron" ).hide();
                                      jQuery( "#progressbar_text" ).html( '<?php echo _e( 'Erledigt', 'email-newsletter' ) ?>' );
-									 jQuery( "#send_cancel" ).val('finish');
+									 jQuery( "#send_cancel" ).val('Fertigstellen');
                                      jQuery( ".ui-progressbar-value" ).fadeOut();
                                 } else {
                                     alert( html );
@@ -181,7 +181,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <span id="timestamp">
                                     <?php _e( "Senden:", 'email-newsletter' ); ?> <b><?php _e( "So schnell wie möglich.", 'email-newsletter' ); ?></b>
                                 </span>
-                                <a href="#edit_timestamp" class="edit-timestamp" style="display: inline;">Edit</a>
+                                <a href="#edit_timestamp" class="edit-timestamp" style="display: inline;">Bearbeiten</a>
                             </p>
                                 <div id="timestampdiv">
                                     <div class="timestamp-wrap">
