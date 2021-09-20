@@ -34,16 +34,16 @@ zu verbessern.
 
 [POWERED BY PSOURCE](https://n3rds.work/psource_kategorien/psource-plugins/)
 
-[Projektseite](https://n3rds.work/piestingtal_source/ps-events-eventmanagement-fuer-wordpress/)
-[Handbuch](https://n3rds.work/docs/ps-events-plugin-handbuch/)
+[Projektseite](https://n3rds.work/piestingtal_source/psenewsletter-wordpress-newsletter-ohne-drittanbieter/)
+[Handbuch](https://n3rds.work/docs/ps-newsletter-handbuch/)
 [Supportforum](https://n3rds.work/forums/forum/psource-support-foren/ps-forum-supportforum/)
-[GitHub](https://github.com/piestingtal-source/ps-events)
+[GitHub](https://github.com/piestingtal-source/ps-newsletter)
 
 == Mehr PSOURCE ==
 
 = PS EVENTS PLUGIN =
 
-Unser [PS Events Plugin](https://n3rds.work/piestingtal_source/ps-google-maps-plugin/) versendet auf Wunsch automatisch Newsletter an Veranstaltungs-Teilnehmer.
+Unser [PS Events Plugin](https://n3rds.work/piestingtal_source/ps-events-eventmanagement-fuer-wordpress/) versendet auf Wunsch automatisch Newsletter an Veranstaltungs-Teilnehmer.
 Halte so Deine Teilnehmer über Deine anstehende Veranstaltung(en) auf dem laufenden!
 
 == Hilf uns ==
