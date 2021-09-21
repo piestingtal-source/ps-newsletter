@@ -493,7 +493,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                         </ul>
                         <p><?php _e('Der wie folgt konfigurierte Shortcode würde beispielsweise die Kontrollkästchen für die Gruppenauswahl ausblenden, den Benutzer automatisch Gruppen mit den angegebenen IDs abonnieren und nach dem Namen des Besuchers fragen.'); ?>
                             <p><code>[enewsletter_subscribe show_name="1" show_groups="0" subscribe_to_groups="1,5"]</code></p>
-                        <p><?php _e('Verwende den Shortcode, um das Abonnementformular zu einem Post- oder Seiteninhalt hinzuzufügen oder es sogar in benutzerdefinierte Seitenvorlagen mit zu integrieren'); ?> <a href="https://developer.wordpress.org/reference/functions/do_shortcode/" target="_blank">do_shortcode function</a>.</p>
+                        <p><?php _e('Verwende den Shortcode, um das Abonnementformular zu einem Post- oder Seiteninhalt hinzuzufügen oder es sogar in benutzerdefinierte Seitenvorlagen mit zu integrieren'); ?> <a href="https://developer.wordpress.org/reference/functions/do_shortcode/" target="_blank">Mehr zur do_shortcode Funktion</a>.</p>
                         <p><?php _e('Verwende den folgenden Shortcode, um die Bestätigungsmeldung <em>abonniert</em> auf der Seite anzuzeigen, die unter <strong>Allgemeine Einstellungen -> ID für abonnierte Seiten</strong> definiert ist.'); ?></p>
                         <p><code>[enewsletter_subscribe_message]</code></p>
                         <p><?php _e('Verwende den folgenden Shortcode, um die Bestätigungsmeldung <em>abgemeldet</em> auf der Seite anzuzeigen, die unter <strong>Allgemeine Einstellungen -> Seiten-ID abbestellen</strong> definiert ist.'); ?></p>
