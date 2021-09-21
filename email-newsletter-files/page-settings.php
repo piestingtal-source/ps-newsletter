@@ -333,7 +333,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                             $this->settings['cron_time'] = 1;
                                         ?>
                                         <select name="settings[cron_time]" >
-                                            <option value="1" <?php echo ( 1 == $this->settings['cron_time'] ) ? 'selected="selected"' : ''; ?> ><?php _e( 'Stunfr', 'email-newsletter' ) ?></option>
+                                            <option value="1" <?php echo ( 1 == $this->settings['cron_time'] ) ? 'selected="selected"' : ''; ?> ><?php _e( 'Stunde', 'email-newsletter' ) ?></option>
                                             <option value="2" <?php echo ( 2 == $this->settings['cron_time'] ) ? 'selected="selected"' : ''; ?> ><?php _e( 'Tag', 'email-newsletter' ) ?></option>
                                             <option value="3" <?php echo ( 3 == $this->settings['cron_time'] ) ? 'selected="selected"' : ''; ?> ><?php _e( 'Monat', 'email-newsletter' ) ?></option>
                                         </select>
