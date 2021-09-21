@@ -71,11 +71,11 @@
     <div class="wrap">
         <h2><?php _e( 'Abonnenten', 'email-newsletter' ) ?></h2>
         <p><?php _e( 'Auf dieser Seite verwaltest Du Newsletter Abonnenten.', 'email-newsletter' ) ?></p>
-        <p><?php _e( 'Hinweis: Änderungen an Abonnentenn werden nicht mit WordPress-Benutzern synchronisiert, sondern umgekehrt.', 'email-newsletter' ) ?></p>
+        <p><?php _e( 'Hinweis: Änderungen an Abonnenten werden nicht mit WordPress-Benutzern synchronisiert, sondern umgekehrt.', 'email-newsletter' ) ?></p>
 
         <p class="slide">
             <?php if(current_user_can('add_newsletter_member') || current_user_can('import_newsletter_members')) { ?>
-                <input type="button" class="button-secondary action" id="show_add_form" value="<?php _e( 'Zeige Formulare für neue Abonnenten/Importe an', 'email-newsletter' ) ?>" />
+                <input type="button" class="button-secondary action" id="show_add_form" value="<?php _e( 'Zeige Formulare für neue Abonnenten-Importe an', 'email-newsletter' ) ?>" />
             <?php } ?>
             <input type="button" class="button-secondary action" id="show_add_form2" value="<?php _e( 'Zeige das Formular für Abonnenten-Export an', 'email-newsletter' ) ?>" />
         </p>
