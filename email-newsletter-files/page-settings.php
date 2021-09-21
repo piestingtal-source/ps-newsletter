@@ -177,8 +177,8 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         $this->settings['wp_user_register_subscribe'] = 1;
                                     ?>
                                     <select name="settings[wp_user_register_subscribe]">
-                                        <option value="1"<?php selected( $this->settings['wp_user_register_subscribe'], 1); ?>><?php _e( 'Subscribe', 'email-newsletter' ) ?></option>
-                                        <option value="0"<?php selected( $this->settings['wp_user_register_subscribe'], 0); ?>><?php _e( 'Disable', 'email-newsletter' ) ?></option>
+                                        <option value="1"<?php selected( $this->settings['wp_user_register_subscribe'], 1); ?>><?php _e( 'Abonnieren', 'email-newsletter' ) ?></option>
+                                        <option value="0"<?php selected( $this->settings['wp_user_register_subscribe'], 0); ?>><?php _e( 'Deaktivieren', 'email-newsletter' ) ?></option>
                                     </select>
                                     <span class="description"><?php _e( 'Wähle ob Benutzer, die sich (mit WordPress) auf Deiner Website registrieren, automatisch den Newsletter abonnieren.', 'email-newsletter' ) ?></span>
                                 </td>
@@ -189,7 +189,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                     <?php _e( 'Abonnieren Seiten-ID:', 'email-newsletter' ) ?>
                                 </th>
                                 <td>
-                                    <input class="small-text" type="number" name="settings[subscribe_page_id]" value="<?php echo isset($this->settings['subscribe_page_id']) ? esc_attr($this->settings['subscribe_page_id']) : '';?>" />
+                                    <input class="small-text" type="number" syle="width:100px" name="settings[subscribe_page_id]" value="<?php echo isset($this->settings['subscribe_page_id']) ? esc_attr($this->settings['subscribe_page_id']) : '';?>" />
                                     <span class="description"><?php _e( 'Füge die ID der Seite hinzu, welche Du nach dem Abonnieren des Benutzers anzeigen möchtest. Du kannst den Shortcode [enewsletter_subscribe_message] auf dieser Seite verwenden, um die Abonnementstatusmeldung anzuzeigen. Zum Deaktivieren leer lassen.', 'email-newsletter' ) ?></span>
                                 </td>
                             </tr>
@@ -199,7 +199,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                     <?php _e( 'Abbestellen Seiten ID:', 'email-newsletter' ) ?>
                                 </th>
                                 <td>
-                                    <input class="small-text" type="number" name="settings[unsubscribe_page_id]" value="<?php echo isset($this->settings['unsubscribe_page_id']) ? esc_attr($this->settings['unsubscribe_page_id']) : '';?>" />
+                                    <input class="small-text" type="number" syle="width:100px" name="settings[unsubscribe_page_id]" value="<?php echo isset($this->settings['unsubscribe_page_id']) ? esc_attr($this->settings['unsubscribe_page_id']) : '';?>" />
                                     <span class="description"><?php _e( 'ID der Seite hinzufügen, die angezeigt werden soll, nachdem der Benutzer sich abgemeldet hat. Du kannst den Shortcode [enewsletter_unsubscribe_message] verwenden, um die Statusmeldung zum Abbestellen anzuzeigen. Zum Deaktivieren leer lassen.', 'email-newsletter' ) ?></span>
                                 </td>
                             </tr>
