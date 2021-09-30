@@ -17,7 +17,7 @@ Der wohl einfachste und sicherste Newsletter für WordPress
 
 Mit dem PS Newsletter Plugin übernimmst Du die volle Kontrolle über Deine Newsletter und Abonnenten-Daten. 
 
-Versende Deine Newsletter direkt aus Deinem WordPress heraus, sollte Dein Hosting zu schwach sein, 
+Versende Deine Newsletter per direkt aus Deinem WordPress heraus, sollte Dein Hosting zu schwach sein, 
 steht Dir eine Integration für einen SMPTP Versand zur Verfügung, zB. für GMAIL/OUTLOOK.
 
 Biete mit Newsletter-Gruppen die Möglichkeit Deine Benutzer nur die Themen zu abonnieren welche für sie wirklich relevant sind.
