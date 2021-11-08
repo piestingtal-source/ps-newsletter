@@ -712,7 +712,7 @@ class Email_Newsletter_Builder  {
 			'type'    => 'text',
 		) );
 		$instance->add_control( new Builder_TinyMCE_Control( $instance, 'email_content', array(
-			'label'   => __('Email Content','email-newsletter'),
+			'label'   => __('Email Inhalt','email-newsletter'),
 			'section' => 'builder_email_content',
 			'settings'   => 'email_content',
 		) ) );
