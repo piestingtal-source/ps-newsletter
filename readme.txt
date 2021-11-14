@@ -57,6 +57,10 @@ Mach eine [Spende per Überweisung oder PayPal](https://n3rds.work/spendenaktion
 
 == ChangeLog ==
 
+= 2.8.3 = DerN3rd =
+
+Depracated Jquery Fixes
+
 = 2.8.2 = DerN3rd =
 
 * Weitere Security-Fixes

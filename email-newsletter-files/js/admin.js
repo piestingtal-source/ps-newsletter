@@ -316,7 +316,7 @@ jQuery( document ).ready( function() {
         }
     });
 
-    jQuery('a.edit-timestamp').click(function() {
+    jQuery('a.edit-timestamp').on("click", function() {
         if (jQuery('#timestampdiv').is(":hidden")) {
             jQuery('#timestampdiv').slideDown('fast');
             jQuery('#mm').focus();
@@ -325,7 +325,7 @@ jQuery( document ).ready( function() {
         return false;
     });
 
-    jQuery('.save-timestamp', '#timestampdiv').click(function () {
+    jQuery('.save-timestamp', '#timestampdiv').on("click", function () {
         aa = jQuery('#aa').val(), mm = jQuery('#mm').val(), jj = jQuery('#jj').val(), hh = jQuery('#hh').val(), mn = jQuery('#mn').val();
 
         jQuery('#timestamp b').html(
@@ -341,7 +341,7 @@ jQuery( document ).ready( function() {
 
         return false;
     });
-    jQuery('.cancel-timestamp', '#timestampdiv').click(function() {
+    jQuery('.cancel-timestamp', '#timestampdiv').on("click", function() {
         jQuery('#timestampdiv').slideUp('fast');
         jQuery('a.edit-timestamp').show();
         jQuery('#timestamp b').html(assoontext);
@@ -361,7 +361,7 @@ jQuery( document ).ready( function() {
     jQuery(current_tab).show().siblings('div').hide();
     jQuery(current_tab).addClass('active');
 
-    jQuery('#newsletter-tabs a').click(function(e) {
+    jQuery('#newsletter-tabs a').on("click", function(e) {
         var tab = jQuery(this).attr('href');
         jQuery( "#newsletter_setting_page" ).val(tab.substring(1));
         jQuery(this).addClass('nav-tab-active').siblings('a').removeClass('nav-tab-active');
