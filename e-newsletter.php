@@ -2406,7 +2406,10 @@ class Email_Newsletter extends Email_Newsletter_functions {
             $only_public = (isset($this->settings['non_public_group_access']) && $this->settings['non_public_group_access'] == 'nobody') ? 1 : 0;
             $groups = $this->get_groups();
 
-            if ( "" != $member_data['unsubscribe_code'] )
+            /*if ( "" != $member_data['unsubscribe_code'] )
+                $member_groups = $this->get_memeber_groups( $member_id );*/
+
+            if ( "" != is_array($member_data) || !isset($member_data['unsubscribe_code'] ) )
                 $member_groups = $this->get_memeber_groups( $member_id );
 
             if ( !isset($member_groups) || ! is_array( $member_groups ) )
