@@ -13,7 +13,7 @@ class Builder_TinyMCE_Control extends WP_Customize_Control {
 		?>
 		
 		<script type="text/javascript">
-			jQuery(document).ready( function() {
+			jQuery(function() {
 				var content = 0;
 				// Our tinyMCE function to fire on every change
 				tinymce_check_changes = setInterval(function() {

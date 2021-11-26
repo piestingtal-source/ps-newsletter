@@ -10,7 +10,7 @@ class Builder_Preview_Control extends WP_Customize_Control {
 		<p><input id="previewEmail" type="text" <?php $this->link(); ?> value="<?php echo $default; ?>" placeholder="email@yourdomain.com" /></p>
 		<button id="sendPreview" style="width: 100%; text-align: center;" class="button button-primary" href="#"><?php _e('Vorschau senden','email-newsletter'); ?></button>
 		<script type="text/javascript">
-			jQuery(document).ready( function($) {
+			jQuery(function($) {
 				var previewButton = $('#sendPreview'),
 					originalText = previewButton.text();
 
