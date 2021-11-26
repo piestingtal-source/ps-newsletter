@@ -58,7 +58,7 @@ jQuery( document ).ready( function() {
             };
 
             jQuery.post(email_newsletter_widget_scripts.ajax_url, data, function(data){ //post data to specified action trough special WP ajax page
-                data = jQuery.parseJSON(data);
+                data = JSON.parse(data);
 
                 if(typeof data.redirect !== 'undefined' && data.redirect)
                     window.location = data.redirect;
