@@ -61,17 +61,17 @@ if ( ! defined( 'ABSPATH' ) ) {
                         });
                     });
 
-                    jQuery( '#send_cron' ).click( function () {
+                    jQuery( '#send_cron' ).on("click",  function () {
                         pause = 1;
                         jQuery( '#sending_form' ).submit();
                     });
 
-                    jQuery( '#send_cancel' ).click( function () {
+                    jQuery( '#send_cancel' ).on("click",  function () {
                         pause = 1;
                         window.location.href = "?page=<?php echo $_REQUEST['page']; ?>&newsletter_action=send_newsletter&newsletter_id=<?php echo $newsletter_id; ?>";
                     });
 
-                    jQuery( '#send_pause' ).click( function () {
+                    jQuery( '#send_pause' ).on("click",  function () {
                         if ( 1 == pause ) {
                             pause = 0;
                             jQuery( "#progressbar_text" ).html( '<?php echo _e( 'Senden', 'email-newsletter' ) ?>' );

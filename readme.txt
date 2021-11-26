@@ -59,7 +59,7 @@ Mach eine [Spende per Überweisung oder PayPal](https://n3rds.work/spendenaktion
 
 = 2.8.3 = DerN3rd =
 
-Depracated Jquery Fixes
+* Fix Deprecated .click()
 
 = 2.8.2 = DerN3rd =
 

@@ -46,7 +46,7 @@ class Builder_Preview_Control extends WP_Customize_Control {
 
 					if(is_saved) {
 						if(confirm("<?php _e('Möchtest Du den Newsletter vor dem Versand speichern? Es wird benötigt, um die neuesten Änderungen zu sehen.','email-newsletter'); ?>")) {
-							jQuery("#save").click();
+							jQuery("#save").trigger("click");
 							var fix = setInterval(function() {
 										if($("#save").is(":disabled")) {
 											sendpreview();

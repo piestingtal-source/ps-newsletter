@@ -4,7 +4,7 @@ jQuery( document ).ready( function() {
     //Groups page
 
 
-    jQuery( "#add_group" ).click( function() {
+    jQuery( "#add_group" ).on("click",  function() {
         if ( "" == jQuery( "#group_name" ).val() ) {
             alert( 'Please write Group name' );
             return false;
@@ -79,7 +79,7 @@ jQuery( document ).ready( function() {
 
 
     //Add new member
-    jQuery( "#add_member" ).click( function() {
+    jQuery( "#add_member" ).on("click",  function() {
         if ( "" == jQuery( "#member_email" ).val() ) {
             alert(enewsletter.write_email);
             return false;
@@ -90,7 +90,7 @@ jQuery( document ).ready( function() {
     });
 
     //Import new members
-    jQuery( "#import_members" ).click( function() {
+    jQuery( "#import_members" ).on("click",  function() {
         if ( "" == jQuery( "#import_members_file" ).val() ) {
             jQuery( "#import_file_line" ).attr('class', 'newsletter_error');
             return false;
@@ -103,7 +103,7 @@ jQuery( document ).ready( function() {
 
 
     //Some actions
-    jQuery( "#apply" ).click( function() {
+    jQuery( "#apply" ).on("click",  function() {
         if ( -1 == jQuery( "#some_action" ).val() ) {
             return false;
         } else if ( ( 'add_members_group' == jQuery( "#some_action" ).val() || 'delete_members_group' == jQuery( "#some_action" ).val() )
@@ -135,7 +135,7 @@ jQuery( document ).ready( function() {
     });
 
 
-    jQuery( "#show_add_form" ).click( function() {
+    jQuery( "#show_add_form" ).on("click",  function() {
         jQuery( "#panel" ).slideToggle( "slow" );
 
         if ( enewsletter.show_add_member == jQuery(this).val() )
@@ -146,7 +146,7 @@ jQuery( document ).ready( function() {
         return false;
     });
 
-    jQuery( "#show_add_form2" ).click( function() {
+    jQuery( "#show_add_form2" ).on("click",  function() {
         jQuery( "#panel2" ).slideToggle( "slow" );
 
         if ( enewsletter.show_export_member == jQuery(this).val() )
@@ -268,7 +268,7 @@ jQuery( document ).ready( function() {
     var cron = 0;
     var assoontext = jQuery('#timestamp b').html();
 
-    jQuery( '#add_cron' ).click( function() {
+    jQuery( '#add_cron' ).on("click",  function() {
         cron = 1;
         jQuery( '#send_form' ).submit();
     });
@@ -374,7 +374,7 @@ jQuery( document ).ready( function() {
 
     jQuery('.newsletter-settings-tabs').show();
 
-    jQuery( "input[type=button][name='save']" ).click( function() {
+    jQuery( "input[type=button][name='save']" ).on("click",  function() {
         if ( "" == jQuery( "#smtp_host" ).val() && jQuery( "#smtp_method" ).prop( 'checked' ) ) {
             alert(enewsletter.smtp_warning);
             return false;
@@ -385,7 +385,7 @@ jQuery( document ).ready( function() {
     });
 
     //install plugin data
-    jQuery( "#install" ).click( function() {
+    jQuery( "#install" ).on("click",  function() {
         if ( "" == jQuery( "#smtp_host" ).val() && jQuery( "#smtp_method" ).prop( 'checked' ) ) {
             alert(enewsletter.smtp_warning);
             return false;
@@ -399,26 +399,26 @@ jQuery( document ).ready( function() {
 
 
     //uninstall plugin data
-    jQuery( "#uninstall_yes" ).click( function() {
+    jQuery( "#uninstall_yes" ).on("click",  function() {
         jQuery( "#newsletter_action" ).val( "uninstall" );
         jQuery( "#settings_form" ).submit();
         return false;
 
     });
 
-    jQuery( "#uninstall" ).click( function() {
+    jQuery( "#uninstall" ).on("click",  function() {
         jQuery( "#uninstall_confirm" ).show( );
         return false;
     });
 
-    jQuery( "#uninstall_no" ).click( function() {
+    jQuery( "#uninstall_no" ).on("click",  function() {
         jQuery( "#uninstall_confirm" ).hide( );
         return false;
     });
 
 
     //Test connection to bounces email
-    jQuery( "#test_bounce_conn" ).click( function() {
+    jQuery( "#test_bounce_conn" ).on("click",  function() {
         var bounce_email    = encodeURIComponent(jQuery( "#bounce_email" ).val());
         var bounce_host     = encodeURIComponent(jQuery( "#bounce_host" ).val());
         var bounce_port     = encodeURIComponent(jQuery( "#bounce_port" ).val());
@@ -442,7 +442,7 @@ jQuery( document ).ready( function() {
     });
 
     //Test connection to bounces email
-    jQuery( "#test_smtp_conn" ).click( function() {
+    jQuery( "#test_smtp_conn" ).on("click",  function() {
         var smtp_host     = encodeURIComponent(jQuery( "#smtp_host" ).val());
         var smtp_port     = encodeURIComponent(jQuery( "#smtp_port" ).val());
         var smtp_from = encodeURIComponent(jQuery( "#smtp_from" ).val());
@@ -496,14 +496,14 @@ jQuery( document ).ready( function() {
 
 
     //save subscribes
-    jQuery( "#save_subscribes" ).click( function() {
+    jQuery( "#save_subscribes" ).on("click",  function() {
         jQuery( "#newsletter_action" ).val( 'save_subscribes' );
         jQuery( "#subscribes_form" ).submit();
 
     });
 
     //unsubscribe
-    jQuery( "#unsubscribe" ).click( function() {
+    jQuery( "#unsubscribe" ).on("click",  function() {
         jQuery( "#newsletter_action" ).val( 'unsubscribe' );
         jQuery( "#subscribes_form" ).submit();
 

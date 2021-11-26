@@ -338,7 +338,7 @@ class Email_Newsletter_Builder  {
 						//make sure it is set
 						var set_val = setInterval(function () {
 							if(jQuery('[data-customize-setting-link="template"]').val() == new_theme) {
-					        	jQuery("#save").click();
+					        	jQuery("#save").trigger("click");
 					        	clearInterval(set_val);
 					        }
 					    },100);
