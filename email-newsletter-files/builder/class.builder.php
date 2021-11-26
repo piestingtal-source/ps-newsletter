@@ -345,7 +345,7 @@ class Email_Newsletter_Builder  {
 					}
 				});
 
-				wp.customize.bind( 'saved', function() {
+				wp.customize.on( 'saved', function() {
 					var new_theme = jQuery('[data-customize-setting-link="template"]').val();
 					if(current_theme != new_theme)
 						window.location.href = window.location.href.replace('theme='+current_theme,'theme='+new_theme);
@@ -1065,13 +1065,13 @@ class Email_Newsletter_Builder  {
 			( function( $ ){
 				<?php if( in_array('EMAIL_TITLE',$this->settings)) : ?>
 					wp.customize('email_title',function( value ) {
-						value.bind(function(to) {
+						value.on(function(to) {
 							$('[data-builder="email_title"]').html( to ? to : '' );
 						});
 					});
 				<?php endif; ?>
 				wp.customize('email_content',function( value ) {
-					value.bind(function(to) {
+					value.on(function(to) {
 						var data = {
 							action: 'builder_do_shortcodes',
 							content: to
@@ -1085,56 +1085,56 @@ class Email_Newsletter_Builder  {
 					});
 				});
 				wp.customize('from_name',function( value ) {
-					value.bind(function(to) {
+					value.on(function(to) {
 						$('[data-builder="from_name"]').html( to ? to : '' );
 					});
 				});
 				wp.customize('from_email',function( value ) {
-					value.bind(function(to) {
+					value.on(function(to) {
 						$('[data-builder="from_email"]').html( to ? to : '' );
 					});
 				});
 				wp.customize('branding_html',function( value ) {
-					value.bind(function(to) {
+					value.on(function(to) {
 						$('[data-builder="branding_html"]').html( to ? to : '' );
 					});
 				});
 				wp.customize('contact_info',function( value ) {
-					value.bind(function(to) {
+					value.on(function(to) {
 						$('[data-builder="contact_info"]').html( to ? to : '' );
 					});
 				});
 				<?php if( in_array('BG_COLOR',$this->settings)) : ?>
 					wp.customize('bg_color',function( value ) {
-						value.bind(function(to) {
+						value.on(function(to) {
 							$('[data-builder="bg"]').css( 'background-color', to ? to : '' );
 						});
 					});
 				<?php endif; ?>
 				<?php if( in_array('LINK_COLOR',$this->settings)) : ?>
 					wp.customize('link_color',function( value ) {
-						value.bind(function(to) {
+						value.on(function(to) {
 							$('a[href]').css( 'color', to ? to : '' );
 						});
 					});
 				<?php endif; ?>
 				<?php if( in_array('BODY_COLOR',$this->settings)) : ?>
 					wp.customize('body_color',function( value ) {
-						value.bind(function(to) {
+						value.on(function(to) {
 							$('[data-builder="body_color"]').css( 'color', to ? to : '' );
 						});
 					});
 				<?php endif; ?>
 				<?php if( in_array('ALTERNATIVE_COLOR',$this->settings)) : ?>
 					wp.customize('alternative_color',function( value ) {
-						value.bind(function(to) {
+						value.on(function(to) {
 							$('[data-builder="alternative_color"]').css( 'color', to ? to : '' );
 						});
 					});
 				<?php endif; ?>
 				<?php if( in_array('TITLE_COLOR',$this->settings)) : ?>
 					wp.customize('title_color',function( value ) {
-						value.bind(function(to) {
+						value.on(function(to) {
 							$('[data-builder="title_color"]').css( 'color', to ? to : '' );
 						});
 					});
@@ -1142,7 +1142,7 @@ class Email_Newsletter_Builder  {
 				<?php if( in_array('BG_IMAGE',$this->settings)) : ?>
 					wp.customize('bg_image',function( value ) {
 
-						value.bind(function(to) {
+						value.on(function(to) {
 							$('[data-builder="bg"]').css( 'background-image', 'url(' + to + ')');
 						});
 					});
@@ -1150,7 +1150,7 @@ class Email_Newsletter_Builder  {
 				<?php if( in_array('HEADER_IMAGE',$this->settings)) : ?>
 					wp.customize('header_image',function( value ) {
 
-						value.bind(function(to) {
+						value.on(function(to) {
 							$('[data-builder="header_image"]').html( '<img src="' + to + '" />');
 						});
 					});
