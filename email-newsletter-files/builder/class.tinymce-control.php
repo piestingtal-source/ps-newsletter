@@ -17,7 +17,7 @@ class Builder_TinyMCE_Control extends WP_Customize_Control {
 				var content = 0;
 				// Our tinyMCE function to fire on every change
 				tinymce_check_changes = setInterval(function() {
-						var check_content = tinyMCE.activeEditor.getContent({format : 'raw'});
+						var check_content = tinymce.activeEditor.getContent({format : 'raw'});
 						
 						if(check_content != content && check_content != '<p><br data-mce-bogus="1"></p>') {
 							content = check_content;
