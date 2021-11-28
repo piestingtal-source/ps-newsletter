@@ -266,7 +266,8 @@ class Email_Newsletter_functions {
             $subscribed = "";
 
         $member = $wpdb->get_row( $wpdb->prepare( "SELECT member_id FROM {$this->tb_prefix}enewsletter_members WHERE wp_user_id = %d".$subscribed, $wp_user_id ), "ARRAY_A" );
-        return $member['member_id'];
+        //return $member['member_id'];
+        return isset($member['member_id']) ? count($member['member_id']) :0;
     }
 
     /**
