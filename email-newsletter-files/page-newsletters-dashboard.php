@@ -169,7 +169,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </p>
         <?php } ?>
 
-        <h3><?php _e( 'Die 5 Neueste Abonnenten:', 'email-newsletter' ) ?></h3>
+        <h3><?php _e( 'Die 5 Neuesten Abonnenten:', 'email-newsletter' ) ?></h3>
            <table id="members_table" class="widefat post">
                 <thead>
                     <tr>

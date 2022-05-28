@@ -763,7 +763,7 @@ class Email_Newsletter extends Email_Newsletter_functions {
     }
 
     function install_notice() {
-        echo '<div class="updated fade"><p>' . sprintf(__('Bitte <strong><a href="%s" title="Installiere jetzt &raquo;">und konfiguriere PS-eNewsletter</a></strong> um alle Features nutzen zu können. <small><a style="color:red;" href="%s">(dismiss)</a></small>', 'email-newsletter'), admin_url('admin.php?page=newsletters-settings'), add_query_arg('newsletter_action', 'dismiss_install')) . '</a></p></div>';
+        echo '<div class="updated fade"><p>' . sprintf(__('Bitte <strong><a href="%s" title="Installiere jetzt &raquo;">Installiere und konfiguriere PS-eNewsletter</a></strong> um alle Features nutzen zu können. <small><a style="color:red;" href="%s">(Verwerfen)</a></small>', 'email-newsletter'), admin_url('admin.php?page=newsletters-settings'), add_query_arg('newsletter_action', 'dismiss_install')) . '</a></p></div>';
     }
 
     /**

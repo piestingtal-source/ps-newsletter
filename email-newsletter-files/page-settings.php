@@ -40,7 +40,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						<a href="#tabs-2" class="nav-tab"><?php _e( 'Einstellungen für ausgehende E-Mails', 'email-newsletter' ) ?></a>
 						<a href="#tabs-3" class="nav-tab"><?php _e( 'Bounce-Einstellungen', 'email-newsletter' ) ?></a>
 						<a href="#tabs-4" class="nav-tab"><?php _e( 'Benutzerberechtigungen', 'email-newsletter' ) ?></a>
-						<a href="#tabs-5" class="nav-tab"><?php _e( 'Shortcodes', 'email-newsletter' ) ?></a>
+						<a href="#tabs-5" class="nav-tab"><?php _e( 'Shortcodes & Hilfe', 'email-newsletter' ) ?></a>
                         <?php if ( ! isset( $mode ) || "install" != $mode ): ?>
                             <a class="nav-tab" href="#tabs-6"><?php _e( 'Deinstallieren', 'email-newsletter' ) ?></a>
 						 <?php endif; ?>
@@ -480,25 +480,31 @@ if ( ! defined( 'ABSPATH' ) ) {
                         </table>
 					</div>
                     <div id="tabs-5" class="tab">
-                    <h3><?php _e( 'Shortcode Benutzung', 'email-newsletter' ) ?></h3>
-                    <p><?php _e('Hier erfährst Du, wie Du Deinn Posts, Seiten und Themenvorlagen E-Newsletter-Shortcodes hinzufügst.','email-newsletter'); ?></p>
-                    <div class="shortcode-help">
-                        <p><?php _e('Mit dem folgenden Shortcode kannst Du das Anmeldeformular überall dort einfügen, wo Du es benötigst.'); ?></p>
-                        <p><code>[enewsletter_subscribe]</code></p>
-                        <p><?php _e('Der Shortcode enthält 3 Parameter, die Du anpassen kannst.'); ?></p>
-                        <ul>
-                            <li><strong>show_name</strong> <?php _e('Aktiviert/Deaktiviert das Feld "Name" im Formular für Webseiten-Besucher.'); ?></li>
-                            <li><strong>show_groups</strong> <?php _e('Aktiviert/Deaktiviert die Gruppenauswahl für Webseiten-Besucher.'); ?></li>
-                            <li><strong>subscribe_to_groups</strong> <?php _e('Abonniert Benutzer automatisch für die durch die ID angegebenen Gruppen.'); ?></li>
-                        </ul>
-                        <p><?php _e('Der wie folgt konfigurierte Shortcode würde beispielsweise die Kontrollkästchen für die Gruppenauswahl ausblenden, den Benutzer automatisch Gruppen mit den angegebenen IDs abonnieren und nach dem Namen des Besuchers fragen.'); ?>
-                            <p><code>[enewsletter_subscribe show_name="1" show_groups="0" subscribe_to_groups="1,5"]</code></p>
-                        <p><?php _e('Verwende den Shortcode, um das Abonnementformular zu einem Post- oder Seiteninhalt hinzuzufügen oder es sogar in benutzerdefinierte Seitenvorlagen mit zu integrieren'); ?> <a href="https://developer.wordpress.org/reference/functions/do_shortcode/" target="_blank">Mehr zur do_shortcode Funktion</a>.</p>
-                        <p><?php _e('Verwende den folgenden Shortcode, um die Bestätigungsmeldung <em>abonniert</em> auf der Seite anzuzeigen, die unter <strong>Allgemeine Einstellungen -> ID für abonnierte Seiten</strong> definiert ist.'); ?></p>
-                        <p><code>[enewsletter_subscribe_message]</code></p>
-                        <p><?php _e('Verwende den folgenden Shortcode, um die Bestätigungsmeldung <em>abgemeldet</em> auf der Seite anzuzeigen, die unter <strong>Allgemeine Einstellungen -> Seiten-ID abbestellen</strong> definiert ist.'); ?></p>
-                        <p><code>[enewsletter_unsubscribe_message]</code></p>
-                    </div>
+                        <h3><?php _e( 'Shortcode Benutzung', 'email-newsletter' ) ?></h3>
+                        <p><?php _e('Hier erfährst Du, wie Du Deinn Posts, Seiten und Themenvorlagen E-Newsletter-Shortcodes hinzufügst.','email-newsletter'); ?></p>
+                        <div class="shortcode-help">
+                            <p><?php _e('Mit dem folgenden Shortcode kannst Du das Anmeldeformular überall dort einfügen, wo Du es benötigst.'); ?></p>
+                            <p><code>[enewsletter_subscribe]</code></p>
+                            <p><?php _e('Der Shortcode enthält 3 Parameter, die Du anpassen kannst.'); ?></p>
+                            <ul>
+                                <li><strong>show_name</strong> <?php _e('Aktiviert/Deaktiviert das Feld "Name" im Formular für Webseiten-Besucher.'); ?></li>
+                                <li><strong>show_groups</strong> <?php _e('Aktiviert/Deaktiviert die Gruppenauswahl für Webseiten-Besucher.'); ?></li>
+                                <li><strong>subscribe_to_groups</strong> <?php _e('Abonniert Benutzer automatisch für die durch die ID angegebenen Gruppen.'); ?></li>
+                            </ul>
+                            <p><?php _e('Der wie folgt konfigurierte Shortcode würde beispielsweise die Kontrollkästchen für die Gruppenauswahl ausblenden, den Benutzer automatisch Gruppen mit den angegebenen IDs abonnieren und nach dem Namen des Besuchers fragen.'); ?>
+                                <p><code>[enewsletter_subscribe show_name="1" show_groups="0" subscribe_to_groups="1,5"]</code></p>
+                            <p><?php _e('Verwende den Shortcode, um das Abonnementformular zu einem Post- oder Seiteninhalt hinzuzufügen oder es sogar in benutzerdefinierte Seitenvorlagen mit zu integrieren'); ?> <a href="https://developer.wordpress.org/reference/functions/do_shortcode/" target="_blank">Mehr zur do_shortcode Funktion</a>.</p>
+                            <p><?php _e('Verwende den folgenden Shortcode, um die Bestätigungsmeldung <em>abonniert</em> auf der Seite anzuzeigen, die unter <strong>Allgemeine Einstellungen -> ID für abonnierte Seiten</strong> definiert ist.'); ?></p>
+                            <p><code>[enewsletter_subscribe_message]</code></p>
+                            <p><?php _e('Verwende den folgenden Shortcode, um die Bestätigungsmeldung <em>abgemeldet</em> auf der Seite anzuzeigen, die unter <strong>Allgemeine Einstellungen -> Seiten-ID abbestellen</strong> definiert ist.'); ?></p>
+                            <p><code>[enewsletter_unsubscribe_message]</code></p>
+                        </div>
+                        <h3><?php _e( 'Hilfe & Support', 'email-newsletter' ) ?></h3>
+                        <p><?php _e('Wie Du Hilfe und Support erhältst, erfährst Du hier.','email-newsletter'); ?></p>
+                        <div class="shortcode-help">
+                            <p><?php _e('Auf unserer PS-eNewsletter Projektseite findest Du alle Hilfreichen Ressourcen.'); ?></p>
+                            <iframe style="width: 100%; min-height:600px" src="https://n3rds.work/piestingtal_source/psenewsletter-wordpress-newsletter-ohne-drittanbieter/" title="PS-eNewsletter Projektseite"></iframe>
+                        </div>
                     </div>
                     <?php if ( ! isset( $mode ) || "install" != $mode ): ?>
                     <div id="tabs-6" class="tab">
