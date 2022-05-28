@@ -34,7 +34,7 @@
             <?php } ?>
         </h2>
         <p><?php _e( 'Diese Seite enthält die Liste aller Newsletter.', 'email-newsletter' ) ?></p>
-        <p class="description"><?php _e( 'Hinweis: Bitte speichere benutzerdefinierten Designs im Ordner "enewsletter-custom-themes" unter wp-content /uploads(+/siteID/, falls in einem einzelnen Blog einer Installation mit mehreren Websites aktiviert)..', 'email-newsletter' ) ?></p>
+        <p class="description"><?php _e( 'Hinweis: Bitte speichere benutzerdefinierten Designs im Ordner "enewsletter-custom-themes" unter wp-content /uploads(+/siteID/, falls in einem einzelnen Blog einer Installation mit mehreren Websites aktiviert).', 'email-newsletter' ) ?></p>
 
         <?php
         global $email_builder;
@@ -68,7 +68,7 @@
                     <th <?php echo (isset($arg['orderby']) && "template" == $arg['orderby']) ? 'class="newsletter-template sorted '. $arg['order'].'"' : 'class="newsletter-template sortable desc"';?>>
                         <?php $url = add_query_arg( array('orderby' => 'template'), $url_orginal ); ?>
                         <a href="<?php echo esc_url( $url ); ?>">
-                            <span><?php _e( 'Template', 'email-newsletter' ) ?></span>
+                            <span><?php _e( 'Vorlage', 'email-newsletter' ) ?></span>
                             <span class="sorting-indicator"></span>
                         </a>
                     </th>
@@ -151,7 +151,7 @@
         <?php
                 }
             else
-                echo '<tr><td colspan="8">'.__( 'Keine Newsletters gefunden.', 'email-newsletter' ).'</td><td>';
+                echo '<tr><td colspan="8">'.__( 'Keine Newsletter gefunden.', 'email-newsletter' ).'</td><td>';
         ?>
         </table>
 

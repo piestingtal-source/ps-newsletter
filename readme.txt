@@ -4,7 +4,7 @@ Donate link: https://n3rds.work/spendenaktionen/unterstuetze-unsere-psource-free
 Tags: newsletter
 Requires at least: 3.7
 Tested up to: 5.6
-Stable tag: 2.8.3
+Stable tag: 2.8.4
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -56,6 +56,12 @@ Wie wärs? Möchtest Du uns mit einer Kaffee-Spende bei der Arbeit an unseren Pl
 Mach eine [Spende per Überweisung oder PayPal](https://n3rds.work/spendenaktionen/unterstuetze-unsere-psource-free-werke/) wir Danken Dir!
 
 == ChangeLog ==
+
+= 2.8.4 = DerN3rd =
+
+* Hilferessource eingefügt
+* Textkorrekturen
+* PSOURCE Updater
 
 = 2.8.3 = DerN3rd =
 

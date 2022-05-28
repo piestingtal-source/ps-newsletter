@@ -297,7 +297,7 @@ class Email_Newsletter_Builder  {
 					jQuery('#customize-info').append(clone);
 				} else {
 					// Use this opportunity to change the theme preview area
-					jQuery('#customize-info .preview-notice').html("<strong class='theme-name panel-title'>"+e.name+"</strong><?php _e('Template wählen','email-newsletter'); ?>");
+					jQuery('#customize-info .preview-notice').html("<strong class='theme-name panel-title'>"+e.name+"</strong><?php _e( 'Vorlage wählen','email-newsletter'); ?>");
 
 					current.addClass('current_theme');
 					current.append('<h3>'+e.name+"</h3>");
@@ -523,9 +523,9 @@ class Email_Newsletter_Builder  {
 
 			$images = array();
 			if(in_array('BG_IMAGE', $this->settings))
-				$images['bg_image'] = 'Background Image';
+				$images['bg_image'] = 'Hintergrundbild';
 			if(in_array('HEADER_IMAGE', $this->settings))
-				$images['header_image'] = 'Header Image';
+				$images['header_image'] = 'Headerbild';
 
 			foreach ($images as $value => $label) {
 				$image = $email_newsletter->get_default_builder_var($value);
@@ -687,7 +687,7 @@ class Email_Newsletter_Builder  {
 
 		// Setup Controls
 		$instance->add_control( new Builder_Hidden_Control( $instance, 'template', array(
-			'label'   => __('Template','email-newsletter'),
+			'label'   => __('Vorlage','email-newsletter'),
 			'section' => 'builder_email_settings',
 			'settings'   => 'template',
 		) ) );
